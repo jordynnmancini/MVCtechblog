@@ -8,19 +8,19 @@ const commentData = require('./commentData.json');
 const seedDatabase = async () => {
     await sequelize.sync({ force: true }); 
 
-    console.log('------Seeding User Data-------');
+    console.log('------------SEEDING USER DATA------------');
     await User.bulkCreate(userData, {
         individualHooks: true,
         returning: true,
     });
 
-    console.log('------Seeding Blog Data-------');
+    console.log('------------SEEDING BLOG DATA------------');
     await Blog.bulkCreate(blogData, {
         individualHooks: true,
         returning: true, 
     }); 
 
-    console.log('------Seeding Comment Data-------');
+    console.log('------------SEEDING COMMENT DATA------------');
     await Comment.bulkCreate(commentData, {
         individualHooks: true,
         returning: true, 
