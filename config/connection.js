@@ -3,6 +3,8 @@ require('dotenv').config();
 
 let sequelize;
 
+// let host = 'localhost' || 'long string from Heroku' 
+
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
