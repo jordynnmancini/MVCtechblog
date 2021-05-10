@@ -1,0 +1,8 @@
+[
+    {
+        "id": 1,
+        "title": "Why is MVC Important", 
+        "text": "MVC is a great way to maintain separation of concerns, and allows for easier collaboration amongst a group of developers.", 
+        "user_id": 1
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "id": 1,
+        "comment_text": "I love MVC!",
+        "user_id": 2,
+        "blog_id": 1
+    }
+]
