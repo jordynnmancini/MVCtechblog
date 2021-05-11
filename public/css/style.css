@@ -1,0 +1,37 @@
+body {
+    background-color: #e0e0e0;
+}
+
+main {
+    margin: 10px 150px 10px 150px; 
+}
+
+.header-title {
+    color:#242526; 
+    padding: 20px; 
+    border-radius: 25px;
+    background-color: #e0e0e0;
+}
+
+.header-text {
+    color: white; 
+    padding: 10px; 
+    font-size: 25px;
+
+}
+
+.header-container {
+    height: 150px; 
+    padding: 30px; 
+}
+
+.blog-btn-container {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.blog-btn {
+    font-size: 30px; 
+}

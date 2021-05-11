@@ -1,0 +1,14 @@
+{{#each blogs as |blog|}}
+<div class="card">
+  <h2 class="card-header">{{blog.title}}</h2>
+  <div class="card-body">
+    <p class="card-text">{{blog.text}}</p>
+    <a href="/blog/{{blog.id}}" class="btn btn-primary">add a comment</a>
+  </div>
+</div>
+{{/each}}
+
+
+<div class="blog-btn-container">
+    <button type="button" class="btn btn-primary blog-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> + add a blog </button>
+</div>
