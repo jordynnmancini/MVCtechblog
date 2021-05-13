@@ -1,5 +1,6 @@
 <div id='blogContainer' class="card">
     <h2 class="card-header"> {{blog.title}}</h2>
+    <p class='blog-subheader'>Written By: {{blog.user.username}} at {{format_time blog.createdAt}} on {{format_date blog.createdAt}}</p>
     <div class="card-body">
         <p class="card-text">{{blog.text}}</p>
     </div>
@@ -12,7 +13,7 @@
         {{/each}}
         </br>
         <div class="input-group mb-3">
-            <input id="new-comment" type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+            <input id="new-comment" type="text" class="form-control" placeholder="your comment here..." aria-label="Example text with button addon"
                 aria-describedby="button-addon1">
             <button id='submit-comment-btn' class="btn btn-primary btn-outline-secondary" type="button" id="button-addon1">Add comment</button>
 

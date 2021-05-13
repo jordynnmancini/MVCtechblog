@@ -36,6 +36,11 @@ main {
     text-align: center;
 }
 
+.blog-subheader{
+    font-size: 15px; 
+    color: darkslategray;
+}
+
 .blog-btn {
     font-size: 30px; 
 }

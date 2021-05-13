@@ -9,6 +9,7 @@
 {{#each user.blogs as |blog|}}
 <div id='blogContainer' class="card">
     <h2 class="card-header"> {{blog.title}}</h2>
+    <p class='blog-subheader'>Written at {{format_time blog.createdAt}} on {{format_date blog.createdAt}}</p>
     <div class="card-body">
         <p class="card-text">{{blog.text}}</p>
         <div class="col-md-4">
