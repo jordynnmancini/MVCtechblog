@@ -1,7 +1,7 @@
 # Tech-Blog-using-MVC
 
 ## Description
-The goal of this assigment is to build a Tech Blog Site where developers can Sign Up/Log In, publish blog posts, and comment on other posts. It's been deployed with Heroku: 
+The goal of this assigment is to build a Tech Blog Site where developers can Sign Up/Log In, publish blog posts, and comment on other posts. It's been deployed with Heroku at this link: 
 
 ![demo](./assets/demo.gif)
 
@@ -13,7 +13,7 @@ The goal of this assigment is to build a Tech Blog Site where developers can Sig
 - [License](#license)
 
 ## Installation
-The user needs to install the `Express`, `Sequalize` & `MySQL` npm packages. It uses `Handlebars.js` as its template language. 
+The user needs to install the `Express`, `Sequalize` & `MySQL` npm packages. It uses `Handlebars.js` as its template language. For a full lists of depencies, check the package.json file. 
 
 ## Tests
 This app does not currently have a way to test it.
