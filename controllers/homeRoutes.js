@@ -32,7 +32,11 @@ router.get('/dashboard', withAuth, async (req, res) => {
             include: [
                 {
                     model: Blog,
-                    include: [{model: Comment}]
+                    include: [{
+                        model: Comment,
+                        include: {model: User, attributes: ['username']}
+
+                    }]
                 }, 
             ]
         });
@@ -72,6 +76,7 @@ router.get('/blog/:id', withAuth, async (req, res) => {
                 },
                 {
                     model: Comment,
+                    include: [{model: User, attributes: ['username']}]
                 }, 
             ],
         });
@@ -84,7 +89,6 @@ router.get('/blog/:id', withAuth, async (req, res) => {
             blog
         }); 
     } catch (err) {
-        console.log(err); 
         res.status(500).json(err); 
 
     }

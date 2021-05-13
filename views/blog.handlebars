@@ -7,7 +7,7 @@
     <div class="card-body">
         {{#each blog.comments as |comment|}}
         <div class="card-text comment-text">
-            {{comment.text}}
+            "{{comment.text}}" - {{comment.user.username}}
         </div>
         {{/each}}
         </br>

@@ -1,6 +1,7 @@
 {{#each blogs as |blog|}}
 <div class="card">
     <h2 class="card-header">{{blog.title}}</h2>
+    <p>Written By: {{blog.user.username}}</p>
     <div class="card-body">
         <p class="card-text">{{blog.text}}</p>
         <a href="/blog/{{blog.id}}" class="btn btn-primary">add a comment</a>
