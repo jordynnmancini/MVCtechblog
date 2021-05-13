@@ -1,0 +1,23 @@
+<div id='blogContainer' class="card">
+    <h2 class="card-header"> {{blog.title}}</h2>
+    <div class="card-body">
+        <p class="card-text">{{blog.text}}</p>
+    </div>
+    <h3 class='card-header comment-header'>Comments:</h3>
+    <div class="card-body">
+        {{#each blog.comments as |comment|}}
+        <div class="card-text comment-text">
+            {{comment.text}}
+        </div>
+        {{/each}}
+        </br>
+        <div class="input-group mb-3">
+            <input id="new-comment" type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+                aria-describedby="button-addon1">
+            <button id='submit-comment-btn' class="btn btn-primary btn-outline-secondary" type="button" id="button-addon1">Add comment</button>
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/blog.js"></script>

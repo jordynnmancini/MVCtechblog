@@ -68,5 +68,6 @@ main {
 }
 
 .comment-text{
-    border-bottom: .5px solid gray;
+    border: .5px solid gray;
+    margin: 2px; 
 }

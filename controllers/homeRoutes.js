@@ -62,25 +62,31 @@ router.get('/login', (req, res) => {
 // render individual blog post with it's comments 
 router.get('/blog/:id', withAuth, async (req, res) => {
     try {
-        const blogData = await Blog.findbyPk(req.params.id, {
+        const blogData = await Blog.findAll({
+            where: {
+               id: req.params.id,  
+            },
             include: [
                 {
-                    model: User,
+                    model: User
                 },
                 {
-                    model: Comment, 
+                    model: Comment,
                 }, 
             ],
         });
-        const blog = blogData.get({ plain: true }); 
+        const blogArray = blogData.map((blog) => blog.get({ plain: true })); 
+        const blog = blogArray[0]; 
 
         res.render('blog', {
             layout: 'main',
-            logged_in: req.session.logged_in,
-            blog,
+            logged_in: true,
+            blog
         }); 
     } catch (err) {
+        console.log(err); 
         res.status(500).json(err); 
+
     }
 }); 
 
