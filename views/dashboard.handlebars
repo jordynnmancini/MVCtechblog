@@ -1,0 +1,51 @@
+<h2>Welcome, {{user.username}}!</h2>
+
+<h3 class='dashboard-sub'>Blogs you've posted:</h3>
+
+</br>
+<div id='no-blogs-message' class='dashboard-sub hidden'>no blogs posted yet!</div>
+
+<div id='blog-list'>
+{{#each user.blogs as |blog|}}
+<div id='blogContainer' class="card">
+    <h2 class="card-header"> {{blog.title}}</h2>
+    <div class="card-body">
+        <p class="card-text">{{blog.text}}</p>
+        <div class="col-md-4">
+            <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
+        </div>
+    </div>
+    <h3 class='card-header comment-header'>Comments:</h3>
+    <div class="card-body">
+        {{#each blog.comments as |comment|}}
+        <div class="card-text comment-text">
+            {{comment.text}}
+        </div>
+        {{/each}}
+    </div>
+</div>
+{{/each}}
+</div>
+
+<div class="blog-btn-container">
+    <button id='new-blog-btn' type="button" class="btn btn-primary blog-btn"> + add
+        a blog </button>
+
+    <div id='form-container' class='form-container hidden'>
+        <form action="" class="create-blog-form">
+            <label for='title'>Title:</label>
+            <input id='title-input' class="form-control form-control-lg" type="text"
+                placeholder="enter a title for your blog post here...">
+            <label for='blogContent'>Blog Post:</label>
+            <div class='form-group'>
+                <textarea id='text-input' name='new-blog' rows='7' class='form-control' placeholder='what would you like to say?'></textarea>
+            </div>
+            <div class='btn-container'>
+            <input id='submit-blog-btn' type="submit" value='Submit' class='btn btn-primary blog-btn'>
+            <button id='close-form-btn' type="button" class="btn btn-primary blog-btn"> Cancel </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/js/dashboard.js"></script>

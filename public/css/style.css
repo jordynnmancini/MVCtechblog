@@ -25,6 +25,10 @@ main {
     padding: 30px; 
 }
 
+#logoutBtn {
+    color: black;
+}
+
 .blog-btn-container {
     margin: auto;
     width: 50%;
@@ -52,4 +56,17 @@ main {
 
 .hidden {
     display: none; 
+}
+
+.dashboard-sub{
+    text-align: center;
+    font-weight: lighter;
+}
+
+.comment-header{
+    font-size: 20px;
+}
+
+.comment-text{
+    border-bottom: .5px solid gray;
 }
