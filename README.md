@@ -1,7 +1,7 @@
 # Tech-Blog-using-MVC
 
 ## Description
-The goal of this assigment is to build a Tech Blog Site where developers can Sign Up/Log In, publish blog posts, and comment on other posts. It's been deployed with Heroku at this link: 
+The goal of this assigment is to build a Tech Blog Site where developers can Sign Up/Log In, publish blog posts, and comment on other posts. It's been deployed with Heroku at this link: https://shrouded-earth-49486.herokuapp.com. 
 
 ![demo](./assets/demo.gif)
 
